@@ -5,6 +5,8 @@
 
 Datos a tener en cuenta:
 
+* *Este es un nuevo repositorio por que tuve algunos problemas con el anterior, una galleta por las molestioas causadas->* 🍪
+
 * *El repositorio esta en el servidor local de XAMPP.*
 
 * *Este documento se actualizará en el futuro.*
@@ -25,5 +27,3 @@ Datos a tener en cuenta:
 |**_Función Cal()_**| _Carpeta con el ejercicio que hicimos en clase._ |
 |**_BarraLateralResponsiva_**| _Carpeta que contiene el archivo para la barra lateral responsiva, incluye el html, la hoja de estilos y una carpeta con las imagenes utilizadas en los iconos y el contenido._ | 
 
-*Por el momento eso sería todo y si leiste esto
-toma esta galleta ->* 🍪
