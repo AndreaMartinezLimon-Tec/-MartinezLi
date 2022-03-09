@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div.sidebar {
+    position: fixed;
+    background: #6f3f70;
+    color: #fff;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar>h2 {
+    text-align: center;
+    margin: 0;
+    padding: 7px;
+    background: #531557;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    font-size: larger;
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    background: #946894;
+    border-left: 4px solid #eee;
+    padding-left: 5px;
+}
+
+a:active {
+    background: #5c2a70;
+    border-left: 3px solid rgb(40, 6, 80);
+    color: #fff;
+}
+
+div.content {
+    background-color: rgb(204, 183, 224);
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1200px;
+}
+
+.contenidoOpcion {
+    display: none;
+}
+
+#Inicio:target,
+#Ropa:target,
+#Joyas:target,
+#Reloj:target,
+#Hogar:target,
+#Tecnología:target {
+    display: block;
+}
+
+input {
+    display: none;
+}
+
+input:checked+.sidebar {
+    width: 0px;
+}
+
+input:checked~.content {
+    margin-left: 0px;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+    color: #330844;
+}
+
+.Icono {
+    vertical-align: middle;
+}
+
+.ImagenTexto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-weight: bold;
+    color: #2d003f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#PagPrincipal {
+    text-align: center;
+    margin: 0;
+    font-size: larger;
+}
+
+.Explicación {
+    text-align: justify;
+    padding: 10px;
+    font-size: medium;
+}
+
+
+/*Tabla para demostar como cambia el contenido mejor que el simple texto. */
+
+table {
+    padding: 0px;
+    margin-left: 20%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    border: 2px solid purple;
+    padding: 10px;
+}
+
+th {
+    background-color: #b653d4;
+}
+
+.Nivel {
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #EAB4EB;
+}
+
+tr:nth-child(even) {
+    background-color: #E9D0E4;
+}
+
+tfoot td {
+    font-size: large;
+    font-weight: bold;
+}
+
+.ImagenTabla {
+    width: 100px;
+}
+
+
+/*Hay tablets que miden lo que mide una pantalla pequeña así que... punto intermedio(?)*/
+
+@media screen and (max-width: 1150px) {
+    div.sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .sidebar h2 {
+        float: none;
+        text-align: center;
+    }
+    .sidebar a {
+        padding: 5px 0%;
+        float: left;
+        /* Calcular el width hace que se vea más presentable que solo pegar todo a la izquierda o derecha*/
+        width: calc(100%/6);
+        font-size: large;
+    }
+    div.content {
+        margin-left: 0;
+    }
+    input:checked+.sidebar {
+        height: 0px;
+    }
+    input:checked~.content {
+        margin-top: 0px;
+    }
+    #PagPrincipal {
+        font-size: medium;
+        font-weight: bold;
+    }
+    .ImagenTexto {
+        width: 85px;
+        height: 85px;
+    }
+    table {
+        margin-left: 15%;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: medium;
+    }
+    tfoot td {
+        font-size: medium;
+        font-weight: bold;
+    }
+    .ImagenTabla {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    table {
+        margin-left: 10%;
+        border-collapse: collapse;
+        font-size: small;
+    }
+}
+
+
+/*A partir de este punto hay que encoger más las letras para que no se amontonen unas con otras*/
+
+@media screen and (max-width: 800px) {
+    .sidebar a {
+        font-size: medium;
+    }
+    .sidebar a>img {
+        width: 20px;
+        height: 20px;
+    }
+    .Explicación {
+        font-size: small;
+    }
+    table {
+        margin-left: 8%;
+        border-collapse: collapse;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    table {
+        margin-left: 2%;
+        border-collapse: collapse;
+        font-size: small;
+    }
+}
+
+
+/*Dejaré esta medida por que me parece aceotable para un telefono promedio*/
+
+@media screen and (max-width: 600px) {
+    .sidebar h2 {
+        float: none;
+        text-align: center;
+    }
+    .sidebar a {
+        padding: 5px 0px;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #PagPrincipal {
+        font-size: small;
+    }
+    .ImagenTexto {
+        width: 75px;
+        height: 75px;
+    }
+    /* Creo que posicionado en el centro se ve mejor*/
+    label {
+        margin-left: 45%;
+    }
+    table {
+        margin: 5%
+    }
+    table,
+    thead,
+    tbody,
+    tfoot,
+    th,
+    td,
+    tr {
+        display: block;
+        text-align: center;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    tfoot td {
+        font-size: small;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    /*Para que no se cree un encabezado en el tfoot */
+    tbody td {
+        position: relative;
+        /* Cada campo ahora sera una fila*/
+        padding-left: 50%;
+        /* hacemos espacio para "encabezado de cada fila" */
+        border-bottom: 0px solid purple;
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+    }
+    /* Para que no afecte al tfoot*/
+    tbody td:nth-of-type(1):before {
+        content: "Modelo";
+    }
+    td:nth-of-type(2):before {
+        content: "Precio";
+    }
+    td:nth-of-type(3):before {
+        content: "Memoria interna.";
+    }
+    td:nth-of-type(4):before {
+        content: "Memoria RAM.";
+    }
+    td:nth-of-type(5):before {
+        content: "Opiniones";
+    }
+    .ImagenTabla {
+        width: 65px;
+    }
+}
