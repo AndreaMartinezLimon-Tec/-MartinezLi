@@ -13,7 +13,6 @@ Datos a tener en cuenta:
 | Nombre | Contenido :scroll: |
 | ------- | --------- |
 |   **_Parcial1_**  |  _Carpeta exclusiva para el parcial 1._ |
-| **_Parcial2_** |  _Carpeta creada con anticipación._ |
 
 
 #### Contenido de la carpeta Parcial1.
