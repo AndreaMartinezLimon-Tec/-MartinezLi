@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Flexbox.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Flexbox.</h1>
+    <p class="centrado">
+        El Módulo de Caja Flexible, también conocido como flexbox, fue diseñado principalmente para el acomodo interno de los elementos y/o componentes de una interfaz.
+    </p>
+    <p> <img src="Imagen/flexbox.png" width="250" height="138">
+    </p>
+    <h2>Conceptos basicos</h2>
+    <ul>
+        <li><b>Contenedor padre/ Flex Container:</b> Es el elemento “padre” que tendrá en su interior cada uno de los ítems flexibles.
+        </li>
+        <li><b>Eje principal/ Main Axis:</b> Los contenedores flexibles tendrán una orientación principal específica. Por defecto suele ser horizontal.
+        </li>
+        <li><b>Eje transversal/ Cross Axis:</b> Además de tener una orientación principal también tendrán una orientación secundaria, perpendicular a la principal. Si la principal es en horizontal, la secundaria será en vertical, y viceversa.
+        </li>
+        <li><b>Elementos hijos/ Flex Items:</b> Se refiere a cada uno de los "hijos" que tendrá el contenedor en su interior.
+        </li>
+    </ul>
+    <p><img src="Imagen/concepto1.png" width="490" height="210"></p>
+    <h2>Propiedades del contenedor padre.</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número.</th>
+                <th>Propiedad.</th>
+                <th>¿Qué es lo que hace?</th>
+                <th>Valores.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="Número">1 </td>
+                <td>Display</td>
+                <td>Define que una caja será de tipo bloque o línea.</td>
+                <td>Flex | inline-flex </td>
+            </tr>
+            <tr>
+                <td class="Número">2 </td>
+                <td>Flex-direction </td>
+                <td>Cambia la orientación del eje principal (row o column).</td>
+                <td>Row | row-reverse | column | column-reverse </td>
+            </tr>
+            <tr>
+                <td class="Número">3 </td>
+                <td>Flex-wrap </td>
+                <td>Determina si los elementos "hijos" son obligados a permanecer en una misma línea o pueden distribuirse en varias líneas.</td>
+                <td>Nowrap | wrap | wrap-reverse </td>
+            </tr>
+            <tr>
+                <td class="Número">4 </td>
+                <td>Flex-flow </td>
+                <td>Es una propiedad atajo para las propiedades flex-direction y flex-wrap.</td>
+                <td>Flex-direction flex-wrap </td>
+            </tr>
+            <tr>
+                <td class="Número">5 </td>
+                <td>Justify-content </td>
+                <td>Define la alineación de los hijos en el eje principal.</td>
+                <td>Flex-start | center | flex-end | space-between | space-around | space-evenly</td>
+            </tr>
+            <tr>
+                <td class="Número">6 </td>
+                <td>Align-items </td>
+                <td>Define la alineación de los hijos en el eje transversal.</td>
+                <td>Stretch | flex-start | flex-end | center | baseline</td>
+            </tr>
+            <tr>
+                <td class="Número">7 </td>
+                <td>Align-content </td>
+                <td>Realiza la misma función de “align-items” pero cuando la caja flexible es multilínea.</td>
+                <td>Flex-start | flex-end | center | space-between | space-around | space-evenly | stretch</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <br>
+    <h2>Propiedades de los elementos hijos.</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número.</th>
+                <th>Propiedad.</th>
+                <th>¿Qué es lo que hace?</th>
+                <th>Valores.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="Número">1 </td>
+                <td>Flex-grow </td>
+                <td>Cuando la caja flexbox tenga espacio sobrante, es la habilidad o el factor de crecer para llenar el espacio.</td>
+                <td>0 |1 | 2 | etc…</td>
+            </tr>
+            <tr>
+                <td class="Número">2 </td>
+                <td>Flex-shrink </td>
+                <td>Especifica el factor de contracción de un flex item, es decir, los ítems con esta propiedad se encogerán para llenar el contenedor de acuerdo a su número.</td>
+                <td>1 | 2 | etc…</td>
+            </tr>
+            <tr>
+                <td class="Número">3 </td>
+                <td>Flex-basis </td>
+                <td>Tamaño base de los “hijos” antes de aplicar algún estilo.</td>
+                <td>Auto | 100px | 2rem | 50% | etc…</td>
+            </tr>
+            <tr>
+                <td class="Número">4 </td>
+                <td>Flex </td>
+                <td>Es un atajo de las propiedades flex-grow, flex-shrink y flex-basis.</td>
+                <td>0 | 1 | auto </td>
+            </tr>
+            <tr>
+                <td class="Número">5 </td>
+                <td>Order </td>
+                <td>Representa el orden que tendrán los elementos hijos en la caja flexbox. Un valor menor siempre irá antes que un valor mayor.</td>
+                <td>0 | 1 | 2 | -3 | etc...</td>
+            </tr>
+            <tr>
+                <td class="Número">6 </td>
+                <td>Align-self </td>
+                <td>Sobreescribe el valor de la propiedad align-items sólo para un elemento hijo específico. </td>
+                <td>Stretch | flex-start | flex-end | center | baseline </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
