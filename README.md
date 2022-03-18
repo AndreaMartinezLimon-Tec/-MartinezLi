@@ -33,4 +33,3 @@ Datos a tener en cuenta:
 |**_SidebarFlex_**| _Carpeta que contiene un sidebar parecido al del primer parcial pero ahora con flexbox._ |
 
 *Si lee esto tome esta galleta, es de chispas de chocolate->* 🍪
-![Un patito](/Pato.gif)
