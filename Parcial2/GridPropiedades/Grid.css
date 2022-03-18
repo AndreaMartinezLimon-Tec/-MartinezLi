@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(191, 220, 247);
+    display: grid;
+    grid-template-columns: 200px 250px 200px;
+    grid-template-rows: 100px 250px 250px;
+    justify-content: center;
+    align-content: center;
+}
+
+.caja {
+    background-color: rgb(204, 173, 233);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    border-style: solid;
+    border-color: rgb(80, 7, 80);
+    border-width: 3px;
+    margin: 5px;
+}
+
+#Caja1 {
+    grid-column: 1 /span 3;
+    background-color: rgb(190, 140, 236);
+}
+
+#Caja3 {
+    background-color: white;
+    grid-column: 2;
+    grid-row: 2 /span 2;
+}
