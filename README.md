@@ -28,6 +28,9 @@ Datos a tener en cuenta:
 #### Contenido de la carpeta Parcial2.
 | Nombre | Descripción |
 | ------- | --------- |
-|**_PropiedadesFlex_**| _Carpeta que contiene la investigación sobre las propiedades de flexbox._ | 
+|**_PracticaFlex_**| _Carpeta que contiene el ejercicio revisado en clase sobre porpiedades Flexbox._ | 
+|**_PropiedadesFlex_**| _Carpeta que contiene la investigación sobre las propiedades de flexbox._ |
+|**_SidebarFlex_**| _Carpeta que contiene un sidebar parecido al del primer parcial pero ahora con flexbox._ |
 
 *Si lee esto tome esta galleta, es de chispas de chocolate->* 🍪
+![Un patito](/Pato.gif)

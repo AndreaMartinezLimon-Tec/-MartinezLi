@@ -4,6 +4,9 @@
     padding: 0;
 }
 
+
+/*Div que contiene a los demás div's */
+
 .Padre {
     width: 100vw;
     height: 100vh;
@@ -183,7 +186,7 @@ tfoot td {
     div.sidebar {
         float: none;
         width: 100%;
-        height: 83px;
+        height: 90px;
     }
     .sidebar h2 {
         float: none;
@@ -192,7 +195,7 @@ tfoot td {
     .sidebar a {
         padding: 5px 0%;
         float: left;
-        /* Calcular el width hace que se vea más presentable que solo pegar todo a la izquierda o derecha*/
+        /* Calcular el width para que todas las opciones esten en un mismo renglón*/
         width: calc(100%/6);
         font-size: large;
     }
@@ -241,6 +244,9 @@ tfoot td {
     .sidebar a {
         font-size: medium;
     }
+    div.sidebar {
+        height: 85px;
+    }
     .sidebar a>img {
         width: 20px;
         height: 20px;
@@ -266,6 +272,7 @@ tfoot td {
 @media screen and (max-width: 600px) {
     .Padre {
         height: 150vh;
+        /*Para que la tabla del apartado de tecnología tenga suficiente espacio*/
     }
     div.sidebar {
         float: none;
@@ -273,7 +280,6 @@ tfoot td {
         width: auto;
         height: auto;
         flex-direction: column;
-        /*PROPIEDAD COLUMN PARA APILAR LAS OPCIONES DEL MENU UNA ENCIMA DE OTRA*/
     }
     div.content {
         float: left;
@@ -305,6 +311,7 @@ tfoot td {
     label {
         margin-left: 45%;
     }
+    /* No cambie nada aquí*/
     table,
     thead,
     tbody,
