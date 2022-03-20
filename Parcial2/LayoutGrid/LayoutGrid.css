@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle at -18.3% 68.3%, #fffcee 0, #f1e7d3 50%, #e0d2b8 100%);
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 20% 33% 33% 14%;
+    justify-content: center;
+    align-content: center;
+}
+
+.caja {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgb(121, 25, 49);
+    border-width: 4spx;
+    margin: 5px;
+    padding: 5px 3%;
+    overflow-y: scroll;
+}
+
+#Carrusel {
+    overflow-y: hidden;
+}
+
+p {
+    text-align: justify;
+    font-weight: normal;
+}
+
+ul {
+    list-style-image: url(Imagenes/Huellita.png);
+    text-align: justify;
+    font-weight: normal;
+    padding-left: 1%;
+}
+
+#ListaRazas {
+    padding-left: 45%;
+}
+
+#Encabezado {
+    grid-column: 1 /span 2;
+    background-color: whitesmoke;
+}
+
+#Encabezado>img {
+    width: 50px;
+    height: 50px;
+    float: none;
+    text-align: center;
+}
+
+#PiePagina {
+    grid-column: 1 /span 2;
+    background-color: whitesmoke;
+}
+
+.Padre {
+    display: flex;
+    flex-direction: row;
+}
+
+.Texto {
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Carrusel {
+    width: 120px;
+    height: 180px;
+    float: left;
+}
+
+.wrap {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 180Px;
+    overflow: hidden;
+}
+
+.inner {
+    z-index: 9;
+    height: 180px;
+    width: calc (120px * 4);
+    animation: anim 30s infinite alternate;
+}
+
+@keyframes anim {
+    0%,
+    10% {
+        margin-left: 0px;
+    }
+    11%,
+    21% {
+        margin-left: -120px;
+    }
+    22%,
+    32% {
+        margin-left: -240px;
+    }
+    33%,
+    43% {
+        margin-left: -360px;
+    }
+    44%,
+    54% {
+        margin-left: -480px;
+    }
+    55%,
+    65% {
+        margin-left: -360px;
+    }
+    66%,
+    76% {
+        margin-left: -240px;
+    }
+    77%,
+    87% {
+        margin-left: -120px;
+    }
+    88%,
+    100% {
+        margin-left: 0px;
+    }
+}
