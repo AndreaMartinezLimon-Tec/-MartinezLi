@@ -135,3 +135,107 @@ ul {
         margin-left: 0px;
     }
 }
+
+@media screen and (max-width:600px)
+{
+    .contenedor {
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 12% 37% 37% 14%;
+    }
+    #Encabezado, #PiePagina {
+        overflow-y: hidden;
+    }
+    #Encabezado>img {
+        display: none;
+    }
+    h2, #PiePagina, p, li {
+        font-size: medium;
+    }
+    h3 {
+        font-size: large;
+    }
+    #ListaRazas {
+        padding-left: 15%;
+    }
+    #Datos {
+        padding-left: 10%;
+    }
+    
+    #Encabezado>img {
+        width: 50px;
+        height: 50px;
+        float: none;
+        text-align: center;
+    }
+    .Carrusel {
+        width: 60px;
+        height: 120px;
+        float: left;
+    }
+    
+    .wrap {
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60px;
+        height: 120px;
+        overflow: hidden;
+    }
+    
+    .inner {
+        z-index: 9;
+        height: 120px;
+        width: calc (60px * 4);
+        animation: anim 30s infinite alternate;
+    }
+    @keyframes anim {
+        0%,
+        10% {
+            margin-left: 0px;
+        }
+        11%,
+        21% {
+            margin-left: -60px;
+        }
+        22%,
+        32% {
+            margin-left: -120px;
+        }
+        33%,
+        43% {
+            margin-left: -180px;
+        }
+        44%,
+        54% {
+            margin-left: -240px;
+        }
+        55%,
+        65% {
+            margin-left: -180px;
+        }
+        66%,
+        76% {
+            margin-left: -120px;
+        }
+        77%,
+        87% {
+            margin-left: -60px;
+        }
+        88%,
+        100% {
+            margin-left: 0px;
+        }
+    }
+    .Padre {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Texto {
+        float: none;
+    }
+    #Sombra {
+        visibility: hidden;
+        display: none;
+    }
+}

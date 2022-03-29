@@ -30,7 +30,9 @@ Datos a tener en cuenta:
 | ------- | --------- |
 |**_PracticaFlex_**| _Carpeta que contiene el ejercicio revisado en clase sobre porpiedades Flexbox._ | 
 |**_PropiedadesFlex_**| _Carpeta que contiene la investigación sobre las propiedades de flexbox._ |
-|**_SidebarFlex_**| _Carpeta que contiene un sidebar parecido al del primer parcial pero ahora con flexbox._ |
+|**_SidebarFlexbox_**| _Carpeta que contiene un sidebar parecido al del primer parcial pero ahora con flexbox._ |
 |**_LayoutGrid_**| _Carpeta que contiene la maquetación de un sitio web realizada con layout grid._ |
+|**_GridPropiedades_**| _Trabajo en clase._ |
+|**_EventoGrid_**| _Trabajo en clase 2._ |
 
 *Si lee esto tome esta galleta, es de chispas de chocolate->* 🍪
