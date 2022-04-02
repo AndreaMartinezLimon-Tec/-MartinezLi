@@ -34,5 +34,7 @@ Datos a tener en cuenta:
 |**_LayoutGrid_**| _Carpeta que contiene la maquetación de un sitio web realizada con layout grid._ |
 |**_GridPropiedades_**| _Trabajo en clase._ |
 |**_EventoGrid_**| _Trabajo en clase 2._ |
+|**_EventosJS_**| _Investigación acerca del proceso de captura y propagación de los eventos en Javascript._ |
+|**_FormBoot_**| _Proximamente..._ |
 
 *Si lee esto tome esta galleta, es de chispas de chocolate->* 🍪
