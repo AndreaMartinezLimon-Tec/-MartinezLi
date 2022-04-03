@@ -35,6 +35,6 @@ Datos a tener en cuenta:
 |**_GridPropiedades_**| _Trabajo en clase._ |
 |**_EventoGrid_**| _Trabajo en clase 2._ |
 |**_EventosJS_**| _Investigación acerca del proceso de captura y propagación de los eventos en Javascript._ |
-|**_FormBoot_**| _Proximamente..._ |
+|**_FormBoot_**| _Formulario responsivo utilizando las clases de Boostrap._ |
 
 *Si lee esto tome esta galleta, es de chispas de chocolate->* 🍪
