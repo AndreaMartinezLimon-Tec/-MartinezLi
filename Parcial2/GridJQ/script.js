@@ -4,4 +4,3 @@ $(document).ready(function(){
     $(e.target).toggleClass('Cambio');
     })
 });
-/* Se eliminó el código Javascript*/
