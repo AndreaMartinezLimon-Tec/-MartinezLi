@@ -14,6 +14,7 @@ Datos a tener en cuenta:
 | ------- | --------- |
 |   **_Parcial1_**  |  _Carpeta exclusiva para el parcial 1._ |
 |   **_Parcial2_**  |  _Carpeta exclusiva para el parcial 2._ |
+|   **_Parcial3_**  |  _Carpeta exclusiva para el parcial 3._ |
 
 #### Contenido de la carpeta Parcial1.
 | Nombre | Descripción |
@@ -36,5 +37,13 @@ Datos a tener en cuenta:
 |**_EventoGrid_**| _Trabajo en clase 2._ |
 |**_EventosJS_**| _Investigación acerca del proceso de captura y propagación de los eventos en Javascript._ |
 |**_FormBoot_**| _Formulario responsivo utilizando las clases de Boostrap._ |
+|**_GridJQ_**| _Modificación del GridPropiedades para que utilice JQuery._ |
+|**_GridGato_**| _Intento de realizar un "gato" utilizando grid y JQuery._ |
+
+#### Contenido de la carpeta Parcial3.
+| Nombre | Descripción |
+| ------- | --------- |
+|**_Componentes_**| _Trabajo en clase donde se utilizaron las alertas y modal proporcionados por Boostrap._ | 
+|**_Ajax_**| _Investigación acerca del concepto de Ajax._ |
 
 *Si lee esto tome esta galleta, es de chispas de chocolate->* 🍪
