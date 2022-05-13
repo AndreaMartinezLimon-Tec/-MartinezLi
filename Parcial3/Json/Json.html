@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>  </head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="Json.js"></script>
+    
+<body style="background-color: gray;">
+
+    <div class="container bg-light">
+
+      <div name="Titulo" class="text-center m-4">
+        <h2>Registrar empleado.</h2>
+        <div id="Fecha"></div>
+      </div>
+
+      <form>
+
+        <div class="form-group text-center m-3">
+          <label class= "mb-2" for="label_Foto"><strong>Foto: </strong></label>
+          <input type="file" class="form-control-file" id="inputFoto">
+        </div> 
+
+        <div class="container row mb-2">
+          <div class="row">
+            <div class="col col-auto">
+              <label for="NombreEmpleado">Nombre:</label>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="inputNombreEmpleado" placeholder="Nombre">
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="container form-group row">
+          <strong class="mb-3 text-center">Apellidos.</strong>
+          <div class="row">
+            <div class="col col-auto">
+              <label for="Ap_Paterno">Paterno:</label>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="inputAp_Paterno" placeholder="Paterno">
+            </div>
+
+            <div class="col col-auto">
+              <label for="Ap_Materno">Materno:*</label>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" id="inputAp_Materno" placeholder="Materno">
+            </div>
+          </div>
+          <small id="Opcional" class="form-text text-muted mb-1">Campo opcional*.</small>
+        </div>
+
+        <div class="text-center mb-3">
+          <strong class="mb-2">Estado civil:</strong>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Opciones" id="Soltero" value="Soltero" checked>
+            <label class="form-check-label" for="label_Soltero">Soltero</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Opciones" id="Casado" value="Casado">
+            <label class="form-check-label" for="label_Casado">Casado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Opciones" id="Otro" value="Otro">
+            <label class="form-check-label" for="label_Otro">Otro</label>
+          </div>
+        </div>
+
+        <div class="input-group container align-self-center mb-3">
+          <span class="input-group-text" id="Tipo_Empleado">Tipo de empleado: </span>
+          <select class="form-select form-select-sm"  id="Seleccion_Tipo_Empleado">
+              <option selected>Selección</option>
+              <option value="1">De tiempo parcial</option>
+              <option value="2">De confianza</option>
+              <option value="3">De planta</option>
+              <option value="4">Temporal</option>
+              <option value="5">Externo</option>
+          </select>
+        </div>
+
+      <div class="form-group row mb-3">
+        <label for="Correo_Per" class="col col-auto col-form-label">Correo personal:</label>
+        <div class="col">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Correo electrónico">
+        </div>
+      </div>
+
+      <div class="form-group row mb-3">
+        <label for="Teléfono" class="col col-auto col-form-label">Teléfono:</label>
+        <div class="col">
+          <input type="number" class="form-control" id="inputTeléfono" placeholder="Teléfono">
+        </div>
+      </div>
+
+      <div class="row mb-3 row-cols-3 row-cols-sm-3 row-cols-lg-auto">
+          <label class="col col-auto" for="CorreoInsti">Correo empleado:</label>
+        <div class="col">
+          <input type="text" class="form-control" id="InputCorreoInsti" placeholder="Correo">
+        </div>
+        <div class="col col-auto">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@Alahas.com</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-auto">
+          <label class="col col-auto" for="Contraseña">Contraseña:</label>
+        </div>
+        <div class="col">
+          <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña">
+        </div>
+      </div>
+
+      <div class="custom-file text-center mb-3">
+        <label class="custom-file-label" for="Curriculum"><strong>Curriculum:</strong></label>
+        <input type="file" class="custom-file-input" id="Curriculum">
+      </div>
+
+      <div class="text-center">
+        <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-dark" id="Registrar">Registrar (Json)</button>
+        <button type="button" class="btn btn-secondary" id="Cancelar">Cancelar (Alerta)</button>
+        <button id="Ajax" type="button" class="btn btn-success">Mostrar Fecha (Ajax)</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">Registrar (Mostrar modal)</button>
+
+
+        </div>
+
+        <div id="myModal" class="modal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Empleado añadido con éxito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Recuerde que al ingresar un empleado en nuestra empresa este debe cumplir con todas las condiciones del contrato como son... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisi lorem, auctor ut dapibus eget, luctus vitae enim. Etiam quis convallis ligula. Sed in bibendum turpis. Sed nulla augue, vulputate at sagittis consequat, consequat ut lacus. Suspendisse efficitur est justo, at tincidunt libero iaculis vel. Sed eget dui mi. Ut sit amet ligula at diam fermentum imperdiet in fermentum enim. In hac habitasse platea dictumst. Morbi varius in nisl ut porta. Vestibulum ut viverra ipsum. Mauris metus sapien, tincidunt nec turpis ac, rhoncus cursus ex. Ut ac sem sit amet metus lobortis luctus vel et massa. Integer dignissim, nisi fringilla ullamcorper cursus, justo nunc condimentum nibh, non aliquam metus arcu vitae ante. Cras nunc orci, egestas mollis rutrum eget, auctor sit amet neque. Cras porttitor quam ac euismod lobortis.
+
+Etiam ipsum augue, dictum quis sodales eget, lobortis ac nisi. Integer vestibulum, magna et sodales tempor, nisl dui ornare nisi, a mattis ex tellus vitae odio. Nullam ac convallis nibh, non vehicula urna. Maecenas fringilla porta luctus. Integer pretium lacus id molestie cursus. Sed volutpat felis sit amet sem egestas posuere. Sed consectetur sapien a blandit accumsan.
+
+Integer elementum dolor elit, a sollicitudin lectus bibendum nec. Nulla urna eros, viverra quis aliquet cursus, maximus vel libero. Nunc id nunc vel sapien venenatis commodo sed sed dui. Nam metus nibh, vestibulum maximus est a, condimentum tincidunt nisl. Vestibulum ut rhoncus lacus. Donec consequat ullamcorper sapien porttitor condimentum. Nam ac ligula in lectus aliquam condimentum. Nullam ut odio purus. Maecenas a faucibus nunc. In eu sollicitudin mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque vulputate odio sapien, sit amet vestibulum ligula iaculis vitae. Donec sed pretium massa, id finibus est. Praesent euismod justo vitae vulputate varius.
+
+Cras efficitur nec ligula id auctor. Vivamus sagittis gravida purus, non tempor nisi ornare vel. Nam leo massa, tempor eu nulla vel, dapibus aliquet dui. Fusce malesuada vitae diam vel finibus. Praesent blandit tincidunt elit eu mattis. Sed augue diam, maximus at gravida sit amet, pulvinar a diam. Nullam volutpat, massa vel ultricies blandit, sem velit maximus purus, nec molestie lectus ipsum eget nulla. Donec sed enim velit. Donec iaculis dui non ex scelerisque, ac tempor velit faucibus. Fusce tristique est eget libero porttitor, sagittis dignissim eros hendrerit. Nullam varius lectus ac molestie laoreet. Etiam sit amet dolor aliquet, interdum turpis nec, commodo erat.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque gravida porta accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla tincidunt sodales felis id ultrices. Nam et urna sapien. Morbi sed quam volutpat, eleifend lectus sit amet, tempus dolor. Vestibulum vitae urna urna. Phasellus euismod at massa faucibus ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus sit amet turpis sed nulla vulputate euismod. Sed nulla odio, consequat et aliquet ut, varius sed massa. Nullam vitae gravida dui.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <br>
+
+      </form>
+
+    </div>
+    
+</body>
+
+</html>
+
+<script type="text/javascript">
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var AlertC = document.getElementById('Cancelar')
+
+function alert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-danger alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+  alertPlaceholder.append(wrapper)
+}
+
+if (AlertC) {
+  AlertC.addEventListener('click', function () {
+    alert('Se ha cancelado el registro.', 'Fail')
+  })
+}
+
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), options);
+
+</script>

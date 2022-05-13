@@ -45,5 +45,7 @@ Datos a tener en cuenta:
 | ------- | --------- |
 |**_Componentes_**| _Trabajo en clase donde se utilizaron las alertas y modal proporcionados por Boostrap._ | 
 |**_Ajax_**| _Investigación acerca del concepto de Ajax._ |
+|**_PracticaAjax_**| _Ejercicio realizado en clase._ |
+|**_Json_**| _Ejercicio realizado en clases._ |
 
 *Si lee esto tome esta galleta, es de chispas de chocolate->* 🍪
