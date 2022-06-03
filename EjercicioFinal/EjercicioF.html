@@ -9,7 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>  </head>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="JavaScript/EjercicioF.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="JavaScript/EjercicioF.Js"></script>
     
 <body style="background-color: gray;">
 
@@ -20,8 +23,14 @@
       </div>
 
       <form>
-        <div class="container row mb-2">
+        <div class="container row mb-4">
           <div class="row">
+            <div class="col col-auto">
+              <label for="ID">ID:</label>
+            </div>
+            <div class="col col-2 col-sm-1">
+              <input type="text" class="form-control" id="inputID" readonly>
+            </div>
             <div class="col col-auto">
               <label for="NombreEmpleado">Nombre:</label>
             </div>
@@ -71,12 +80,12 @@
         <div class="input-group container align-self-center mb-3">
           <span class="input-group-text" id="Tipo_Empleado">Tipo de empleado: </span>
           <select class="form-select form-select-sm"  id="Seleccion_Tipo_Empleado">
-              <option selected>Selección</option>
-              <option value="1">De tiempo parcial</option>
-              <option value="2">De confianza</option>
-              <option value="3">De planta</option>
-              <option value="4">Temporal</option>
-              <option value="5">Externo</option>
+              <option selected value="selected">Selección</option>
+              <option value="De tiempo parcial">De tiempo parcial</option>
+              <option value="De confianza">De confianza</option>
+              <option value="De planta">De planta</option>
+              <option value="Temporal">Temporal</option>
+              <option value="Externo">Externo</option>
           </select>
         </div>
 
@@ -87,36 +96,35 @@
         </div>
       </div>
 
-      <div class="form-group row mb-3">
-        <label for="Teléfono" class="col col-auto col-form-label">Teléfono:</label>
-        <div class="col">
+      <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-5 row-cols-xl-8">
+        <label for="Teléfono" class="col col-auto col-md-4 col-lg-auto col-xl-auto col-form-label">Teléfono:</label>
+        <div class="col col-8 col-sm-6 col-md-5 col-xl-auto">
           <input type="number" class="form-control" id="inputTeléfono" placeholder="Teléfono">
         </div>
-      </div>
 
-      <div class="row mb-3 row-cols-3 row-cols-sm-3 row-cols-lg-auto">
-          <label class="col col-auto" for="CorreoInsti">Correo empleado:</label>
-        <div class="col">
+        <label class="col col-auto col-xl-auto col-form-label" for="CorreoInsti">Correo empleado:</label>
+        <div class="col col-4 col-lg-auto col-xl-3">
           <input type="text" class="form-control" id="InputCorreoInsti" placeholder="Correo">
         </div>
-        <div class="col col-auto">
+        <div class="col col-xl-auto">
           <div class="input-group">
             <div class="input-group-prepend">
               <div class="input-group-text">@Alahas.com</div>
             </div>
           </div>
-
         </div>
-        <div class="col col-auto">
-          <label class="col col-auto" for="Contraseña">Contraseña:</label>
-        </div>
-        <div class="col">
+        <label class="col col-auto col-xl-auto col-form-label" for="Contraseña">Contraseña:</label>
+        <div class="col col-xl-auto">
           <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña">
         </div>
       </div>
-
+      <br>
       <div class="text-center">
-        <button type="button" class="btn btn-dark" id="ConsultaBD">Consulta BD</button>
+        <button type="button" class="btn btn-info" id="Consultar">Consultar</button>
+        <button type="button" class="btn btn-success" id="Agregar">Agregar</button>
+        <button type="button" class="btn btn-warning" id="Modificar">Modificar</button>
+        <button type="button" class="btn btn-danger" id="Eliminar">Eliminar</button>
+        <button type="button" class="btn btn-dark" id="Limpiar">Limpiar</button>
       </div>
 
       <br>
@@ -126,5 +134,4 @@
     </div>
     
 </body>
-
 </html> 
